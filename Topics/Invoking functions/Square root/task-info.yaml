@@ -1,0 +1,23 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: "fun main() {\n    // do not change this code\n    val number = readln().toDouble()\n\
+    \n    // write your code below\n    TODO()    \n}"
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/19915#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:3:9: error: conflicting declarations: val number: Double, val number: Int
+        val number = readln().toDouble()
+            ^
+    main.kt:6:9: error: conflicting declarations: val number: Double, val number: Int
+        val number = 64
+            ^
+    main.kt:7:34: error: type mismatch: inferred type is Int but Double was expected
+        val sqrtofnumber = Math.sqrt(number)
+                                     ^
+  time: "Thu, 29 Dec 2022 19:03:33 UTC"
+record: -1
